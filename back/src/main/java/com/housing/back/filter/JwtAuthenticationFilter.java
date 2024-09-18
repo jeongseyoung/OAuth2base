@@ -36,12 +36,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
         try {
-            // String requestURI = request.getRequestURI();
-            // if (requestURI.startsWith("/api/v1/auth/")) {
-            // System.out.println("씨발");
-            // filterChain.doFilter(request, response);
-            // return;
-            // }
             String token = parseBearerToken(request);
             if (token == null) {
                 filterChain.doFilter(request, response);
@@ -56,6 +50,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             UserEntity userEntity = userRepository.findByUserId(userId);
             String role = userEntity.getRole(); // ROLE_USER, ROLE_ADMIN
 
+            System.out.println("JwtAuthenticationFilter " + userEntity);
             List<GrantedAuthority> authorities = new ArrayList<>();
             authorities.add(new SimpleGrantedAuthority(role));
 

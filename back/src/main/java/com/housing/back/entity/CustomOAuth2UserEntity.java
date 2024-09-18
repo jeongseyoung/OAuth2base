@@ -27,6 +27,7 @@ public class CustomOAuth2UserEntity implements OAuth2User {
 
     @Override
     public String getName() {
+        System.out.println("CustomOAuth2UserEntity : " + userId);
         return this.userId;
     }
 

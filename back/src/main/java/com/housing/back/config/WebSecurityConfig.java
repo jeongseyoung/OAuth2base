@@ -48,10 +48,12 @@ public class WebSecurityConfig {
                         .requestMatchers("/api/v1/user/**").hasRole("USER") // ROLE_는 빼고
                         .requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
+
                 .oauth2Login(oauth -> oauth.authorizationEndpoint(endpoint -> endpoint.baseUri("/api/v1/auth/oauth2"))
                         .redirectionEndpoint(endpoint -> endpoint.baseUri("/oauth2/callback/*"))
                         .userInfoEndpoint(endpoint -> endpoint.userService(defaultOAuth2UserService))
                         .successHandler(oAuth2SuccessHandler))
+
                 .exceptionHandling(e -> e.authenticationEntryPoint(new FailedAuthenticationEntryPoint())) // 인증실패시 실행
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
@@ -81,7 +83,7 @@ class FailedAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response,
             AuthenticationException authException) throws IOException, ServletException {
-
+        System.out.println("FailedAuthenticationEntryPoint");
         response.setContentType("application/json");
         response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         response.getWriter().write("{ \"code\": \"NP\", \"message\": \"Authorization failed\"}");
