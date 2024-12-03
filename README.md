@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=venom&height=150&color=auto&text=SpringSecurity%20,%20OAuth%20로그인%20구현+%20&fontColor=000000&fontAlign=50&fontSize=30" />
 
 #### 소개 
-- Spring Security와 JWT를 이용하여 자체 로그인과 OAuth 로그인 구현.
+- Spring Security와 JWT를 이용하여 자체 로그인과 OAuth 로그인 구현. 
 
 
 #### 기능 
