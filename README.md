@@ -16,7 +16,7 @@
                         .requestMatchers("/", "/api/v1/auth/**", "/oauth2/**").permitAll()
                         .requestMatchers("/api/v1/user/**").hasRole("USER") 
                         .requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
-```
+```  
 - OAuth 2.0 로그인 프로세스 설정
 ```java
 .oauth2Login(oauth -> oauth.authorizationEndpoint(endpoint -> endpoint.baseUri("/api/v1/auth/oauth2"))
