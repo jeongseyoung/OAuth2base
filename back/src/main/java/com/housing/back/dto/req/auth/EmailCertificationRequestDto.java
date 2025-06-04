@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmailCertificationRequestDto {
-
+    
     @NotBlank
     private String id;
 
