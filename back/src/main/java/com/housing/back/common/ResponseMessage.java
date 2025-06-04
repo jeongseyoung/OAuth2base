@@ -6,7 +6,7 @@ public interface ResponseMessage {
     String VALIDATION_FAIL = "VALIDATION_FAIL";
 
     String DUPLICATED_ID = "DUPLICATED_ID";
-
+  
     String SIGN_IN_FAIL = "SIGN_IN_FAIL";
 
     String CERTIFICATION_FAIL = "CERTIFICATION_FAIL";
