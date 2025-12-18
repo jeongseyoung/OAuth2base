@@ -17,7 +17,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.housing.back.entity.UserEntity;
 import com.housing.back.provider.JwtProvider;
-import com.housing.back.repository.UserRepository;
+import com.housing.back.repository.UserRepository;     
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
