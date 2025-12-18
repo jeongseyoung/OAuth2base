@@ -9,7 +9,7 @@ import com.housing.back.common.ResponseMessage;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter
+@Getter    
 @AllArgsConstructor
 public class ResponseDto {
     private String code;
