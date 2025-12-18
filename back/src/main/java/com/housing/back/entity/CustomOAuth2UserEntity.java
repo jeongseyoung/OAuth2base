@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
+@AllArgsConstructor    
 @NoArgsConstructor
 public class CustomOAuth2UserEntity implements OAuth2User {
 
