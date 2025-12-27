@@ -13,5 +13,5 @@ public interface ResponseMessage {
 
     String DATABASE_ERROR = "DATABASE_ERROR";
 
-    String MAIL_FAIL = "mail send failed";
+    String MAIL_FAIL = "mail send failed";   
 }
