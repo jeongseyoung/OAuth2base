@@ -13,5 +13,5 @@ public interface ResponseCode {
 
     String DATABASE_ERROR = "DBE";
 
-    String MAIL_FAIL = "MF";
+    String MAIL_FAIL = "MF";  
 }
