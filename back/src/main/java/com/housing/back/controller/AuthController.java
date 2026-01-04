@@ -15,7 +15,7 @@ import com.housing.back.dto.res.auth.SignUpResponseDto;
 import com.housing.back.service.AuthService;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;    
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
