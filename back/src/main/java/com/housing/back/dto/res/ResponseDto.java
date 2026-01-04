@@ -7,7 +7,7 @@ import com.housing.back.common.ResponseCode;
 import com.housing.back.common.ResponseMessage;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Getter;   
 
 @Getter    
 @AllArgsConstructor
