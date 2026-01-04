@@ -8,7 +8,7 @@ public interface ResponseMessage {
     String DUPLICATED_ID = "DUPLICATED_ID";
   
     String SIGN_IN_FAIL = "SIGN_IN_FAIL";
-
+      
     String CERTIFICATION_FAIL = "CERTIFICATION_FAIL";
 
     String DATABASE_ERROR = "DATABASE_ERROR";
