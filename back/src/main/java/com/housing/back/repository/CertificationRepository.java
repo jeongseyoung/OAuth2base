@@ -14,3 +14,4 @@ public interface CertificationRepository extends JpaRepository<CertificationEnti
     @Transactional
     void deleteByUserId(String userId);
 }
+     
