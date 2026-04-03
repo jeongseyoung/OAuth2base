@@ -5,7 +5,7 @@ public class CertificationNumber {
         String certificationNumber = "";
         for (int i = 0; i < 4; i++) {
             certificationNumber += (int) (Math.random() * 10);
-        }
+        }      
         return certificationNumber;     
     }
 }      
