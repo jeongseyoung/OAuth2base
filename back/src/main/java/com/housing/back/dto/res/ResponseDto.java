@@ -8,7 +8,7 @@ import com.housing.back.common.ResponseMessage;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;   
-
+     
 @Getter    
 @AllArgsConstructor
 public class ResponseDto {
