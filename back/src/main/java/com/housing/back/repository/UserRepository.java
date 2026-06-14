@@ -7,7 +7,7 @@ import com.housing.back.entity.UserEntity;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, String> {
-
+  ㄹ
     boolean existsByUserId(String userId);
 
     UserEntity findByUserId(String userId);
