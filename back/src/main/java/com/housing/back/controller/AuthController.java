@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController // requestBody 반환가능
+@RestController // requestBody 반환가능 //가능  
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
