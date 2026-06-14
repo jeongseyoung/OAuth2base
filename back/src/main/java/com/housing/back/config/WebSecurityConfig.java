@@ -21,7 +21,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
     
 import com.housing.back.filter.JwtAuthenticationFilter;     
 import com.housing.back.handler.OAuth2SuccessHandler;
-
+       
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
